@@ -13,7 +13,7 @@ Console.Clear();
 
 int[,] twoDimensionalArray = CreateTwoDimensionalArray();
 int[] sumArray = GetSumArrayRows(twoDimensionalArray);
-int indexMinSumArrayRows = GetMaxSumArrayRows(sumArray);
+int indexMinSumArrayRows = GetMinSumArrayRows(sumArray);
 PrintTwoDimensionalArray(twoDimensionalArray, indexMinSumArrayRows);
 
 int[,] CreateTwoDimensionalArray()
@@ -50,7 +50,7 @@ int[] GetSumArrayRows(int[,] array)
     return newArray;
 }
 
-int GetMaxSumArrayRows(int[] array)
+int GetMinSumArrayRows(int[] array)
 {
     int minSumArrayRows = array[0];
     int index = 0;
